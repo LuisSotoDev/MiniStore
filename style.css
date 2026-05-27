@@ -1,0 +1,343 @@
+/* Elimina márgenes y espacios por defecto de TODOS los elementos */
+* {
+  
+  /* Quita el margen exterior */
+  margin: 0;
+
+  /* Quita el espacio interno */
+  padding: 0;
+
+  /* Hace que el padding y border no aumenten el tamaño total */
+  box-sizing: border-box;
+}
+
+/* ===== ESTILOS GENERALES DEL BODY ===== */
+body {
+
+  /* Tipo de letra */
+  font-family: Arial, sans-serif;
+
+  /* Color de fondo */
+  background-color: #f4f4f4;
+}
+
+/* ===== HEADER ===== */
+.header {
+
+  /* Ancho del contenedor */
+  width: 85%;
+
+  /* Centra horizontalmente */
+  margin: 30px auto 0;
+
+  /* Color de fondo */
+  background-color: #111827;
+
+  /* Color del texto */
+  color: white;
+
+  /* Espaciado interno */
+  padding: 20px 35px;
+
+  /* Activa FLEXBOX */
+  display: flex;
+
+  /* Separa elementos hacia los extremos */
+  justify-content: space-between;
+
+  /* Centra verticalmente */
+  align-items: center;
+}
+
+/* ===== LOGO ===== */
+.logo {
+
+  /* Texto en negritas */
+  font-weight: bold;
+
+  /* Tamaño del texto */
+  font-size: 18px;
+}
+
+/* ===== MENÚ ===== */
+.menu {
+
+  /* Activa flexbox */
+  display: flex;
+
+  /* Centra verticalmente */
+  align-items: center;
+
+  /* Espacio entre elementos */
+  gap: 30px;
+}
+
+/* ===== LINKS DEL MENÚ ===== */
+.menu a {
+
+  /* Color del texto */
+  color: white;
+
+  /* Quita subrayado */
+  text-decoration: none;
+
+  /* Tamaño del texto */
+  font-size: 14px;
+}
+
+/* ===== CARRITO ===== */
+.carrito {
+
+  /* Tamaño del icono */
+  font-size: 20px;
+}
+
+/* ===== HERO ===== */
+.hero {
+
+  /* Ancho */
+  width: 85%;
+
+  /* Centrado */
+  margin: 0 auto;
+
+  /* Altura */
+  height: 250px;
+
+  /* Fondo degradado */
+  background: linear-gradient(120deg, #f3e8ff, #ddd6fe);
+
+  /* FLEXBOX */
+  display: flex;
+
+  /* Centra horizontalmente */
+  justify-content: center;
+
+  /* Centra verticalmente */
+  align-items: center;
+
+  /* Centra texto */
+  text-align: center;
+}
+
+/* ===== TÍTULO HERO ===== */
+.hero h1 {
+
+  /* Tamaño */
+  font-size: 34px;
+
+  /* Espacio inferior */
+  margin-bottom: 10px;
+
+  /* Color */
+  color: #111827;
+}
+
+/* ===== TEXTO HERO ===== */
+.hero p {
+
+  /* Espacio inferior */
+  margin-bottom: 20px;
+
+  /* Color */
+  color: #333;
+}
+
+/* ===== BOTONES ===== */
+button {
+
+  /* Fondo */
+  background-color: #7c3aed;
+
+  /* Texto blanco */
+  color: white;
+
+  /* Sin borde */
+  border: none;
+
+  /* Espaciado interno */
+  padding: 10px 25px;
+
+  /* Bordes redondeados */
+  border-radius: 5px;
+
+  /* Cambia cursor */
+  cursor: pointer;
+}
+
+/* ===== CONTENEDOR PRODUCTOS ===== */
+.productos {
+
+  /* Ancho */
+  width: 85%;
+
+  /* Centrado */
+  margin: 0 auto;
+
+  /* Fondo */
+  background-color: white;
+
+  /* Espaciado interno */
+  padding: 25px;
+
+  /* Centra texto */
+  text-align: center;
+}
+
+/* ===== TÍTULO PRODUCTOS ===== */
+.productos h2 {
+
+  /* Espacio inferior */
+  margin-bottom: 25px;
+}
+
+/* ===== GRID DE PRODUCTOS ===== */
+.grid-productos {
+
+  /* Activa GRID */
+  display: grid;
+
+  /* Crea 3 columnas iguales */
+  grid-template-columns: repeat(3, 1fr);
+
+  /* Espacio entre tarjetas */
+  gap: 25px;
+}
+
+/* ===== TARJETAS ===== */
+.card {
+
+  /* Borde */
+  border: 1px solid #ddd;
+
+  /* Bordes redondeados */
+  border-radius: 8px;
+
+  /* Espacio inferior */
+  padding-bottom: 15px;
+
+  /* Fondo blanco */
+  background-color: white;
+
+  /* Oculta desbordamiento */
+  overflow: hidden;
+}
+
+/* ===== IMÁGENES ===== */
+.card img {
+
+  /* Ancho completo */
+  width: 100%;
+
+  /* Altura fija */
+  height: 160px;
+
+  /* Ajusta imagen */
+  object-fit: cover;
+}
+
+/* ===== TÍTULO TARJETA ===== */
+.card h3 {
+
+  /* Espacio superior */
+  margin-top: 12px;
+
+  /* Tamaño */
+  font-size: 16px;
+}
+
+/* ===== PRECIO ===== */
+.card p {
+
+  /* Color */
+  color: #7c3aed;
+
+  /* Negritas */
+  font-weight: bold;
+
+  /* Márgenes */
+  margin: 8px 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+
+  /* Ancho */
+  width: 85%;
+
+  /* Centrado */
+  margin: 0 auto 30px;
+
+  /* Fondo */
+  background-color: #111827;
+
+  /* Texto blanco */
+  color: white;
+
+  /* Espaciado interno */
+  padding: 25px 35px;
+
+  /* FLEXBOX */
+  display: flex;
+
+  /* Separa contenido */
+  justify-content: space-between;
+
+  /* Centra verticalmente */
+  align-items: center;
+}
+
+/* ===== REDES ===== */
+.redes {
+
+  /* FLEXBOX */
+  display: flex;
+
+  /* Espaciado */
+  gap: 15px;
+
+  /* Centra verticalmente */
+  align-items: center;
+}
+
+/* ===== LINKS REDES ===== */
+.redes a {
+
+  /* Texto blanco */
+  color: white;
+
+  /* Sin subrayado */
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  /* Header y footer en columna */
+  .header,
+  .footer {
+
+    /* Cambia a columna */
+    flex-direction: column;
+
+    /* Espacio entre elementos */
+    gap: 20px;
+
+    /* Texto centrado */
+    text-align: center;
+  }
+
+  /* Menú vertical */
+  .menu {
+
+    /* Dirección vertical */
+    flex-direction: column;
+  }
+
+  /* Grid de una sola columna */
+  .grid-productos {
+
+    /* 1 columna */
+    grid-template-columns: 1fr;
+  }
+}
